@@ -29,7 +29,7 @@ const Header = () => {
       position="sticky"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-slate-500">
+      className="bg-slate-800">
       <NavbarContent>
         <NavbarBrand as={Link} href="/">
           <Image src="/assets/images/MisteviaLogo.png" width={300} height={300} alt="mistevia Logo" />

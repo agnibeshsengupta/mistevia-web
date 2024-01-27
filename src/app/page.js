@@ -1,7 +1,7 @@
 import HeroSection from "../components/home/HeroSection"
 import Reviews from '../components/home/Reviews'
 import Aboutus from '../components/home/Aboutus'
-import MenuSlider from '../components/home/MenuSlider'
+import MisteviaMenu from '../components/home/MisteviaMenu'
 import Contactus from '../components/home/Contactus'
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col">
       <HeroSection />
       <Aboutus />
-      <MenuSlider />
+      <MisteviaMenu />
       <Reviews />
       <Contactus />
     </main>

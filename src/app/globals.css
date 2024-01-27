@@ -23,3 +23,7 @@ html {
 body {
   background-color: #f8f6f4;
 }
+
+#review-section {
+  background: linear-gradient(135deg, #31A7AB, #E7B7E4);
+}
