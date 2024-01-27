@@ -40,8 +40,8 @@ const MenuSlider = ({ menuList }) => {
             }}
             modules={[Autoplay, Navigation]}
         >
-            {menuList.map((item) =>
-                <SwiperSlide>
+            {menuList.map((item, index) =>
+                <SwiperSlide key={`${item.name}-${index}`}>
                     <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7" isDisabled={!item.isLive}>
                         <Image
                             removeWrapper

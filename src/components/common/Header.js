@@ -42,8 +42,8 @@ const Header = () => {
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex">
-        {HeaderLinks && HeaderLinks.map((item) =>
-          <NavbarItem>
+        {HeaderLinks && HeaderLinks.map((item, index) =>
+          <NavbarItem key={`${item.name}-${index}`}>
             <Link className="text-lg text-white" href={item.route}>
               {item.name}
             </Link>
@@ -65,7 +65,7 @@ const Header = () => {
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
-    </Navbar>
+    </Navbar >
   );
 }
 
