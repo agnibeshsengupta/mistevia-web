@@ -6,7 +6,7 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
+  // Link,
   Image,
   NavbarMenuToggle,
   NavbarMenu,
@@ -14,7 +14,7 @@ import {
 } from "@nextui-org/react";
 
 import { HeaderLinks } from "../../constants/Header"
-
+import { Link } from "react-scroll";
 
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
       position="sticky"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-slate-800">
+      className="bg-slate-800 h-20">
       <NavbarContent>
         <NavbarBrand as={Link} href="/">
           <Image src="/assets/images/MisteviaLogo.png" width={300} height={300} alt="mistevia Logo" />
@@ -40,28 +40,16 @@ const Header = () => {
         />
 
       </NavbarContent>
-
-      <NavbarContent className="hidden md:flex">
+      <NavbarContent justify="end" className="hidden md:flex">
         {HeaderLinks && HeaderLinks.map((item, index) =>
           <NavbarItem key={`${item.name}-${index}`}>
-            <Link className="text-lg text-white" href={item.route}>
-              {item.name}
-            </Link>
+            <Link to={item.route} smooth duration={800} className="text-white cursor-pointer text-lg">{item.name}</Link>
           </NavbarItem>)}
       </NavbarContent>
       <NavbarMenu>
         {HeaderLinks.map((item, index) => (
           <NavbarMenuItem key={`${item.name}-${index}`}>
-            <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              className="w-full"
-              href={item.route}
-              size="lg"
-            >
-              {item.name}
-            </Link>
+            <Link to={item.route} smooth duration={800} className="text-white cursor-pointer text-lg">{item.name}</Link>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

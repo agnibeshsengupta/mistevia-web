@@ -1,26 +1,44 @@
 import React from 'react';
-import { Avatar } from "@nextui-org/react";
 
 function Aboutus(props) {
     return (
-        <section className="text-gray-600 body-font bg-bluedark text-white">
-            <div className="container px-5 py-16 mx-auto flex flex-col">
-                <div className="lg:w-4/6 mx-auto">
-                    <div className="flex flex-col sm:flex-row mt-10">
-                        <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                            <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                                <Avatar src="/assets/images/agnibesh.jpg" className="w-20 h-20 text-large" />
-                            </div>
-                            <div className="flex flex-col items-center text-center justify-center">
-                                <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Agnibesh Sengupta</h2>
-                                <div className="w-12 h-1 bg-yellow rounded mt-2 mb-4"></div>
-                                <p className="text-base">Owner of Mistevia, MSc. Agricultural Biotechnology & Photographer</p>
-                            </div>
-                        </div>
-                        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+        <section id="aboutus" className="text-gray-600 body-font text-white relative">
+            <div className="container px-5 py-10 mx-auto flex flex-col">
+                <h2 className="font-medium title-font mt-4  text-white text-lg sm:text-2xl md:text-5xl">About Us</h2>
+                <div className="w-20 sm:w-60 h-1 bg-yellow rounded mt-2 mb-4"></div>
+                <div className="lg:w-4/5">
+                    <div className="flex flex-col sm:flex-row mt-3">
+                        <div className="sm:w-2/3 sm:pl-8 mr-10 sm:py-8 mt-4 pt-4 sm:mt-0 text-center sm:text-left text-lg sm:text-xl">
                             <p className="leading-relaxed text-lg mb-4">
-                                Cooking is my ultimate passion – a canvas where I express creativity and a love for wholesome, delicious food. My culinary journey is fueled by the challenge of crafting sugar-free and gluten-free dishes. I believe in the art of balance, creating meals that are not just healthy but bursting with flavors. Every dish I prepare is a celebration of taste, proving that vibrant, nutrient-rich ingredients can be the foundation of culinary excellence. In my kitchen, cooking is not just a trend; it is a lifestyle focused on nourishing the body without compromising on flavor. I find joy in sharing suger and gluten free indulgence and showcasing that healthy eating is a delightful journey.</p>
+                                মাল্টি ক্যুজিন সাত্ত্বিক নিরামিষ রেস্টুরেন্ট বিশেষত ডায়াবেটিক ও স্বাস্থ্য সচেতনদের জন্য।
+                                আমাদের তৈরি খাদ্য শূন্য বা অল্প ক্যালোরি যুক্ত যা কম গ্লাইসেমিক ইনডেক্স যুক্ত</p>
+                            <p className='mb-3'>যেগুলি আমাদের খাবারে দেওয়া হয়না :
+                            </p>
+                            <ul>
+                                <li className='mb-2'>▪পেঁয়াজ ব্যতীত</li>
+                                <li className='mb-2'>▪ রসুন ব্যতীত</li>
+                                <li className='mb-2'>▪ চিনি ব্যতীত</li>
+                                <li className='mb-2'>▪ লাল লঙ্কা গুঁড়ো ব্যতীত</li>
+                                <li className='mb-2'>▪ মাশরুম ব্যতীত</li>
+                                <li className='mb-2'>▪ ময়দা ব্যতীত</li>
+                                <li className='mb-2'>▪ ক্যাফেইন ব্যতীত</li>
+                                <li className='mb-2'>▪ রিফাইন্ড তেল ব্যতীত</li>
+                                <li className='mb-2'>▪ কৃত্রিম মিষ্টি ব্যতীত</li>
+                            </ul>
 
+                        </div>
+                        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left text-lg sm:text-xl">
+                            <p className="leading-relaxed text-lg mb-4">
+                                আমরা যেগুলি রান্নায় ব্যবহার করি</p>
+
+                            <ul>
+                                <li className='mb-2'>▪প্রাকৃতিক মিষ্ট দ্রব্য(যেমন স্টিভিয়া এক্সট্রাক্ট, মঙ্ক ফ্রুট এক্সট্রাক্ট, ও যষ্টি মধু) ব্যবহার করা হয়</li>
+                                <li className='mb-2'>▪ অপরিশুদ্ধ ভার্জিন তেল (সর্ষে/তিল/নারকেল/বাদাম)  ব্যবহার করা হয়</li>
+                                <li className='mb-2'>▪সম্পুর্ন ফাইবার যুক্ত আটা</li>
+                                <li className='mb-2'>▪ ফাইবার যুক্ত খাদ্য
+                                </li>
+                                <li className='mb-2'>▪ ফর্মেন্টেড খা</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

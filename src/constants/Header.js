@@ -1,13 +1,13 @@
 export const HeaderLinks = [
-    { name: "Home", route: "/" },
-    // { name: "About", route: "/about" },
-    // { name: "Events", route: "/events" }
+    //{ name: "Home", route: "/" },
+    { name: "Menu", route: "#menu" },
+    { name: "Contact", route: "#contact" }
 ]
 
 
 export const ContactDetails = [
     { title: "ADDRESS", description: "Shubhankar Sarani Rd, Pratap Bagan, Bankura, West Bengal 722101" },
-    { title: "E-MAIL", description: " admin@mistevia.com" },
+    { title: "E-MAIL", description: "contact@mistevia.com" },
     { title: "PHONE", description: "+91-8695955999" }
 ]
 

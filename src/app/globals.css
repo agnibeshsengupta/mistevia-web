@@ -27,3 +27,9 @@ body {
 #review-section {
   background: linear-gradient(135deg, #31A7AB, #E7B7E4);
 }
+
+#aboutus {
+  background-image: url("/assets/images/aboutus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
